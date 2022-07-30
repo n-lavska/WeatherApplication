@@ -60,3 +60,7 @@ h3 {
   font-size: 25px;
   opacity: 0.7;
 }
+.bottom-link {
+  display: block;
+  text-align: center;
+}
