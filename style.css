@@ -1,0 +1,62 @@
+.background {
+  max-width: 700px;
+  margin: 30px auto;
+  background-image: url("images/sky.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 452px;
+  border-radius: 3px;
+}
+.inner_background {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  top: 74px;
+  border-radius: 3px;
+}
+form {
+  margin-top: 5px;
+  margin-bottom: 47px;
+}
+.type,
+.search,
+.current {
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.current:hover {
+  border: 1px solid #727487;
+  transition: all 200ms ease-in-out;
+}
+.search:hover {
+  border: 1px solid #727487;
+  transition: all 200ms ease-in-out;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 22px;
+}
+h3 {
+  font-weight: 300;
+  font-size: 14px;
+}
+.list {
+  line-height: 0.8;
+}
+.umbrella {
+  font-size: 45px;
+}
+
+.align {
+  text-align: center;
+}
+.emoji {
+  font-size: 25px;
+  opacity: 0.7;
+}
