@@ -49,8 +49,9 @@ h3 {
 .list {
   line-height: 0.8;
 }
-.icon {
-  font-size: 45px;
+#icon {
+  position: relative;
+  bottom: 15px;
 }
 
 .align {
