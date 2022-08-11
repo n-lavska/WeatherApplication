@@ -21,19 +21,6 @@ let weather = {
   },
 };
 
-/*let city = prompt("Enter a city");
-city = city.toLowerCase().trim();
-if (city in weather) {
-  alert(
-    `It is currently ${Math.round(weather[city].temp)}°C (${Math.round(
-      weather[city].temp * 1.8 + 32
-    )} °F) in ${city} with a humidity of ${weather[city].humidity}`
-  );
-} else {
-  alert(
-    "Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+sydney"
-  );
-}*/
 //current time and date
 let now = new Date();
 let hour = now.getHours();
@@ -58,6 +45,31 @@ let days = [
 let day = days[now.getDay()];
 let dateLine = document.querySelector("#current-time");
 dateLine.innerHTML = `${day} ${hour}:${minutes}`;
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+               
+              <div class="col">
+                <h4>${day}</h4>
+                <i class="fa-solid fa-sun emoji"></i>
+                <h3>
+                  <span class="day-weather">25°</span>/<span
+                    class="night-weather"
+                    >13°</span>
+                </h3>
+              </div>
+              `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 //search engine
 function showTemperature(response) {
@@ -128,3 +140,4 @@ function handleSubmit(event) {
   searchCity(city);
 }
 searchCity("Westervoort");
+displayForecast();
