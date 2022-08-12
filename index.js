@@ -65,12 +65,12 @@ function displayForecast(response) {
         forecastHTML +
         `
                
-              <div class="col">
+              <div class="col align">
                 <h4>${formatDay(forecastDay.dt)}</h4>
                 
                 <img src="http://openweathermap.org/img/wn/${
                   forecastDay.weather[0].icon
-                }@2x.png" width="42"/>
+                }@2x.png" width="50"/>
                 <h3>
                   <span class="max-temperature">${Math.round(
                     forecastDay.temp.max
